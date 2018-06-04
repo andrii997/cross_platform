@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>lab_3_ajax</title>
+	<link rel="stylesheet" href="/css/theme.css">
+</head>
+<body>
+<form action="/coin" name="users-edit"
+      class="users-edit users-edit-hidden" method="POST">
+	<h2>Create/Edit coin</h2>
+
+	<input type="hidden" name="id" id="id">
+	<div class="field-row">
+		<label for="fullname">name:</label>
+		<input type="text" name="fullname" id="fullname">
+	</div>
+	<div class="field-row" style="display: none;">
+		<label for="birthday">Birthday:</label>
+		<input type="text" name="birthday" id="birthday">
+	</div>
+	<div class="field-row">
+		<label for="price_usd">price:</label>
+		<input type="text" name="price_usd" id="price_usd">
+	</div>
+	<div class="field-row" style="display: none">
+		<label for="address">Address:</label>
+		<input type="text" name="address" id="address">
+	</div>
+	<div class="field-row" style="display: none">
+		<label for="country">Country:</label>
+		<select name="country" id="country"></select>
+	</div>
+	<div class="field-row">
+		<label for="short-info">№:</label>
+		<textarea name="short-info" id="short-info"></textarea>
+	</div>
+	<div class="field-row" style="display:none;">
+		<label for="full-info">DetailedInfo:</label>
+		<textarea name="full-info" id="full-info"></textarea>
+	</div>
+	<button class="btn btn-save">
+		Save changes
+	</button>
+	<button class="btn btn-cancel" id="cancel">Cancel</button>
+</form>
+<h2 style="text-align: center;"><span style="text-transform: uppercase;">price coin</span>
+	<button class="btn btn-new" id="create">Create coin</button>
+</h2>
+
+<div id="details"></div>
+<table id="users-table">
+	<tr>
+		<th>№</th>
+		<th>name</th>
+		<th>price</th>
+		<th>Options</th>
+	</tr>
+</table>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>

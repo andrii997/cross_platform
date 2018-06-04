@@ -1,0 +1,26 @@
+body {
+    padding: 20px 0 0 20px;
+    cursor: pointer;
+}
+
+#field {
+    margin: 5px 5px;
+    overflow: hidden;
+    width: 600px;
+    height: 400px;
+    border-top: 10px solid silver;
+    border-right: 10px solid gold;
+    border-bottom: 10px solid gold;
+    border-left: 10px solid silver;
+    background-color: rebeccapurple;
+    font: 10px/1.2 monospace;
+}
+.triangle-right {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: darkgoldenrod;
+    border: 2px solid #4cae4c;
+    border-radius: 50%;
+    font: 12px/1 monospace;
+}

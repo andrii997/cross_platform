@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Points(point) {
+        this.point = point;
+        this.cor1 = 0;
+        this.cor2 = 0;
+        this.cor3 = 0;
+    }
+
+    // методы в прототипе
+    Points.prototype.run = function(cor1,cor2,cor3) {
+        this.cor1 += cor1;
+        this.cor2 += cor2;
+        this.cor3 += cor3;
+        alert( this.cor1 + this.cor2 + this.cor3);
+    };
+
+    Points.prototype.stop = function() {
+        this.speed = 0;
+        alert( this.point + ' стоит' );
+    };
+
+    var point = new Points('точка');
+
+    alert( point.speed ); // 0, z proto
+    animal.point(5);
+    animal.point(5);
+    animal.stop();
+</script>
+</body>
+</html>
